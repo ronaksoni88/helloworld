@@ -35,7 +35,7 @@ jobs:
       with:
         image: sonironak88/docker-demo
         tags: latest
-        registry: registry-url.io
+        registry: docker.io
         dockerfile: Dockerfile
         username: sonironak88
         password: zWCMNdcYF3I6qX
