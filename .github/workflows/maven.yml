@@ -37,5 +37,5 @@ jobs:
         tags: latest
         registry: registry-url.io
         dockerfile: Dockerfile
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        username: sonironak88
+        password: zWCMNdcYF3I6qX
