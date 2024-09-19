@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
@@ -11,8 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/demo")
 public class ServiceAController {
 
+    private static final Logger logger = LoggerFactory.getLogger(ServiceAController.class);
+
     @GetMapping()
     public ResponseEntity<String> hello() {
+        logger.info("Entered Controller Hello World");
         return new ResponseEntity<>("Hello World", HttpStatus.OK);
     }
 
