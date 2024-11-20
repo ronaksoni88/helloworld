@@ -30,4 +30,9 @@ public class ServiceAController {
     public ResponseEntity<String> giveResourceNotFound() {
         return new ResponseEntity<>("Resource Not Found", HttpStatus.NOT_FOUND);
     }
+
+    @GetMapping("/hello")
+    public String helloWorld() {
+        return "Hello, World!";
+    }
 }
